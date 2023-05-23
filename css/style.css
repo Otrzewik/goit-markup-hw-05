@@ -475,7 +475,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
-  vertical-align: Top;
+  vertical-align: top;
   text-decoration: none;
   letter-spacing: 0.03em;
   padding-bottom: 9px;
@@ -598,41 +598,47 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-
 .figcaption-portfolio {
-  border: 1px solid #eeeeee;
+  /* display: block; */
+  border: 1px solid #EEEEEE;
   border-top: none;
   padding: 20px 24px;
 }
-
 .figure-portfolio {
   cursor: pointer;
 }
-
 .figure-portfolio:hover,
 .figure-portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-.overlay {
+.potfolio-top-text {
+  /* wyjezdzajacy tekst */
   position: absolute;
-  background-color: rgba(33, 150, 243, 0.9);
-}
-
-.overlay p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
-  color: var(--brand-color-white);
-  width: 100%;
+  top: 0;
+  left: 0;
   height: 100%;
-  padding-top: 49px;
-  padding-left: 24px;
-  padding-right: 45px;
-  padding-bottom: 49px;
+  /* granice obszaru - obejmuje caly relatywny obiekt - tu-img */
+  padding: 49px 45px 49px 24px;
+  /* odstepy */
+  background-color: #2196f3e5;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.56;
+  /* animacja */
+  transform: translateY(100%);
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay {
+  /* div z obrazem i trescia po najechaniu na karte */
+  position: relative;
+  overflow: hidden;
+  /* schowanie zawartosci, ktora wychodzi poza obszar obrazu przy rozwijaniu */
+}
+.figure-portfolio:hover .potfolio-top-text,
+.figure-portfolio:focus .potfolio-top-text {
+  transform: translateY(0);
 }
 
 /*   MODAL  */
