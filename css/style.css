@@ -547,6 +547,13 @@ body {
 
 /* -- Portfolio -- */
 
+.is-active {
+  color: var(--brand-color-blue);
+  text-decoration: underline;
+  text-decoration-color: #2196f3;
+  border-radius: 2px;
+}
+
 .btn2 {
   background-color: var(--brand-color-grey);
   border: none;
@@ -598,21 +605,9 @@ body {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.overlay-box {
-  position: relative;
-  overflow: hidden;
-  width: 370px;
-  height: 294px;
-  top: 0;
-  left: 0;
-}
-
 .overlay {
   position: absolute;
   background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay p {
@@ -623,13 +618,12 @@ body {
   letter-spacing: 0.03em;
   color: var(--brand-color-white);
   width: 100%;
+  height: 100%;
   padding-top: 49px;
   padding-left: 24px;
   padding-right: 45px;
   padding-bottom: 49px;
 }
-
-.
 
 /*   MODAL  */
 
@@ -668,11 +662,14 @@ body {
   height: 24px;
   right: 24px;
   top: 24px;
-  background-color: #e7e9fc;
+  background-color: var(--brand-color-white);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color var(--transition);
+  fill: var(--brand-color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-close:hover,
@@ -686,7 +683,7 @@ body {
 }
 
 .modal-icon {
-  fill: #000;
+  fill: var(--brand-color-black);
   transition: fill var(--transition);
 }
 
