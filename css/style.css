@@ -552,8 +552,8 @@ body {
   color: var(--brand-color-blue);
 }
 
-.is-active::after{
-  content:"";
+.is-active::after {
+  content: "";
   position: absolute;
   background: var(--brand-color-blue);
   border-radius: 2px;
@@ -561,7 +561,6 @@ body {
   height: 4px;
   margin-top: 28px;
   display: block;
-  
 }
 
 .btn2 {
@@ -600,7 +599,7 @@ body {
 }
 .figcaption-portfolio {
   /* display: block; */
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
 }
