@@ -355,8 +355,8 @@ body {
   align-items: center;
 }
 
-.people-soc-icon:hover,
-.people-soc-icon:focus {
+.social-media:hover .people-soc-icon,
+.social-media:focus .people-soc-icon {
   fill: var(--brand-color-white);
 }
 
@@ -412,20 +412,22 @@ body {
   padding-bottom: 94px;
   gap: 30px;
 }
+
 .clients-logo {
   cursor: pointer;
-}
-.clients-logo-svg {
   fill: var(--icons);
   box-sizing: border-box;
   border: 1px solid var(--icons);
   border-radius: 4px;
   width: 170px;
   height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.clients-logo-svg:hover,
-.clients-logo-svg:focus {
+.clients-logo:hover,
+.clients-logo:focus {
   fill: var(--brand-color-blue);
   border-color: var(--brand-color-blue);
 }
@@ -443,6 +445,7 @@ body {
   padding-bottom: 20px;
 }
 
+
 .footer-logo-blue {
   color: var(--brand-color-blue);
 }
@@ -450,6 +453,7 @@ body {
 .logo-part-white {
   color: var(--brand-color-white);
 }
+
 
 .footer {
   background-color: var(--brand-color-background);
@@ -640,7 +644,6 @@ body {
 .figure-list-item:hover .potfolio-top-text {
   transform: translateY(0);
 }
-
 
 /*   MODAL  */
 
