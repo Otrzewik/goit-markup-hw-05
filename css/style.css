@@ -606,6 +606,7 @@ body {
 .figure-portfolio {
   cursor: pointer;
 }
+
 .figure-portfolio:hover,
 .figure-portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -635,10 +636,11 @@ body {
   overflow: hidden;
   /* schowanie zawartosci, ktora wychodzi poza obszar obrazu przy rozwijaniu */
 }
-.figure-portfolio:hover .potfolio-top-text,
-.figure-portfolio:focus .potfolio-top-text {
+.figure-list-item:hover .potfolio-top-text,
+.figure-list-item:hover .potfolio-top-text {
   transform: translateY(0);
 }
+
 
 /*   MODAL  */
 
